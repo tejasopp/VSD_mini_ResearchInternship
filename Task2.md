@@ -94,6 +94,96 @@ Decimal representation: 4,242,573,203
 
 ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/ed6bdd36-481a-4c6b-a49e-f671df1923f9)
 
+### 3. S-Format instructions
+Used for **storing** data.
+Store needs to read two registers, rs1 for base memory address, and rs2 for data to be stored, as well as need immediate offset.
+Store don’t write a value to the register file, no rd. RISC-V design decision is move low 5 bits of immediate to 
+where rd field was in other instructions – keep rs1/rs2 fields in same place.
+
+![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/eacb302c-9bd2-4492-83e6-d06ea522a1f6)
+
+**Example, *sw* instruction**
+![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/5bba1292-a8c6-4ad0-b488-137fb9e2ca94)
+
+#### All RV32 Store Instructions
+
+![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/2ba41d75-ff17-4166-b37e-b9d2e4b1eb6b)
+
+### 4. B-Format instructions
+These are **Branching instructions**. We Need to specify an address to go to, also take two registers to compare. Branches typically used for loops (if-else, 
+while, for).B-format is mostly same as S-Format, with two 
+register sources (rs1/rs2) and a 12-bit immediate. But now immediate represents values -2^12 to +2^12-2 in 2-byte increments.
+
+![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/1b84d4d3-e590-4f66-8fa8-1bb2cf5ea7dd)
+
+Example,
+RISCV Code:
+Loop: beq x19,x10,End
+ add x18,x18,x10
+ addi x19,x19,-1
+ j Loop
+End: <target instr>
+![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/c191ebc4-f0b5-4483-b57c-bba311d51395)
+
+#### All RISC-V Branch Instructions
+
+![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/7bb36944-1b98-4903-a7f9-c4045cd05064)
+
+### 5. U-Format instructions
+1. These are **"Upper Immediate"** instructions.
+2.  Has 20-bit immediate in upper 20 bits of 32-bit instruction word
+3.  One destination register, rd
+4. Used for two instructions
+– LUI – Load Upper Immediate &
+ AUIPC – Add Upper Immediate to PC
+![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/b08bebab-806c-4a13-a7f4-c5153ba78877)
+
+Example, *lui* writes the upper 20 bits of the destination with the immediate value, and clears the lower 12 bits. *lui x10, 0x87654*
+
+### 6. J-Format instrustions
+For branches, we assumed that we won’t want to branch too far, so we can specify a **change** in the PC. These changes are done with help of **jumps**
+with J-format instructions. Ideally, we would specify a 32-bit memory address 
+to jump to. Unfortunately, we can’t fit both a 7-bit opcode and a 32-bit address into a single 32-bit word. Also, when linking we must write to an rd register.
+![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/9a7995cb-66d6-4a64-a11b-33fdab0b85fd)
+
+**Example, *jal* instruction.**
+
+## Summary of RISC-V Instruction Formats
+![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/8c4911e6-b403-48dd-bda6-ca9802530e5d)
+
+## Now, 32-bit instruction code for following instructions:
+1. **ADD r6, r2, r1**(R-type)
+    - `0000000 00001 00010 000 00110 0110011`
+2. **SUB r7, r1, r2**(R-type)
+    - `0100000 00010 00001 000 00111 0110011`
+3. **AND r8, r1, r3**(R-type)
+    - `0000000 00011 00001 111 01000 0110011`
+4. **OR r9, r2, r5**(R-type)
+    - `0000000 00101 00010 110 01001 0110011`
+5. **XOR r10, r1, r4**(R-type)
+    - `0000000 00100 00001 100 01010 0110011`
+6. **SRL r16, r14, r2**(R-type)
+    - `0000000 00010 01110 101 10000 0110011`      
+7. **SLT r11, r2, r4**(R-type)
+    - `0000000 00100 00010 010 01011 0110011`
+8. **SLL r15, r1, r2**(R-type)
+    - `0000000 00010 00001 001 01111 0110011`
+9. **ADDI r12, r4, 5**(I-type)
+    - `000000000101 00100 000 01100 0010011`
+10. **LW r13, r1, 2**(I-type)
+    - `000000000010 00001 010 01101 0000011`
+11. **SW r3, r1, 2**(S-type)
+    - `0000000 00010 00001 010 00011 0100011`
+12. **BNE r0, r1, 20**(B-type)
+    - `0000000 01010 00001 001 00000 1100011`
+13. **BEQ r0, r0, 15**(B-type)
+    - `0000000 01111 00000 000 00000 1100011`
+
+
+
+
+
+
 
 
 
