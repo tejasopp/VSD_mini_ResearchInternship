@@ -179,6 +179,11 @@ to jump to. Unfortunately, we can’t fit both a 7-bit opcode and a 32-bit addre
 13. **BEQ r0, r0, 15**(B-type)
     - `0000000 01111 00000 000 00000 1100011`
 
+## References
+
+1. Book, **Computer Organization and Design (RISC-V Edition)**
+2. https://inst.eecs.berkeley.edu/~cs61c/resources/su18_lec/Lecture7.pdf
+3. ChatGpt
 
 
 
