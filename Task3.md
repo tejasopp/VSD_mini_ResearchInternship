@@ -3,10 +3,12 @@
 RV32I refers to the 32-bit base integer instruction set architecture (ISA) of RISC-V, an open-source hardware instruction set architecture based on established reduced instruction set computing (RISC) principles.
 
 Block Diagram:
+
 ![181293948-beb8622c-7696-4b06-b6c9-eeab9b8ab9d3](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/0f540568-95da-41bc-bc21-16aaf39cd3d2)
 
 ## What is Single Cycle Processor?
 A single cycle processor is a type of CPU design where each instruction is completed in a single clock cycle. This means that all the steps involved in executing an instruction—fetching it from memory, decoding it, performing the required operation, and writing the result back—happen within one clock pulse.
+
 ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/4a92489d-369d-46f8-a2fb-c27e6c0e23bb)
 
 ## What is Pipelining?
