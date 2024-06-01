@@ -275,28 +275,36 @@ The module uses pipeline registers to pass data between stages, ensuring smooth 
   ```
 - Here are the output waveforms:
   1. add r6,r2,r1
+
      ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/d556356e-1048-4560-bc10-8ca2c3feddbc)
 
-  2. sub r7,r1,r2
-     ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/0e1dcd7c-b6f8-42de-9755-2ea079167315)
+  3. sub r7,r1,r2
 
-  3. and r8,r1,r3
-     ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/4a21f366-5a7b-4ad8-8696-83acba8a3281)
+      ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/0e1dcd7c-b6f8-42de-9755-2ea079167315)
 
-  4. or r9,r2,r5
-     ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/18b6b35b-e8a0-4b55-95ec-81fce662a6f3)
+  5. and r8,r1,r3
 
-  5. xor r10,r1,r4
-     ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/b4bd2bda-7e5c-4660-bdaa-87b3e5c56495)
+      ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/4a21f366-5a7b-4ad8-8696-83acba8a3281)
 
-  6. addi r12,r4,5
+  7. or r9,r2,r5
+
+      ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/18b6b35b-e8a0-4b55-95ec-81fce662a6f3)
+
+  9. xor r10,r1,r4
+
+      ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/b4bd2bda-7e5c-4660-bdaa-87b3e5c56495)
+
+  11. addi r12,r4,5
+    
      ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/ea371474-1269-4e54-b431-114b8d8779c5)
 
-  7. subi r3,r1,2
+  12. subi r3,r1,2
+    
      ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/68a5bb89-a1b2-4b27-88db-bd0670dc52e9)
 
   - Final All output Waveforms:
-    ![Screenshot 2024-06-01 212126](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/5bd88605-5617-43dc-bcbd-be9d0614adca)
+
+     ![Screenshot 2024-06-01 212126](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/5bd88605-5617-43dc-bcbd-be9d0614adca)
 
     
 
