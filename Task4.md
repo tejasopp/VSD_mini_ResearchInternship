@@ -8,4 +8,24 @@ The Handheld Gaming Console project integrates a RISC-V microcontroller to creat
 3. Push buttons (5)
 4. Capacitors (100nF, 10uF)
 5. Coin Battery (	CR2032)
-6. Resistors (1k, 2k, 3k, 
+6. Resistors (1k, 2k, 3k, 20k, 8k)
+7. Buzzer (MLT-5030)
+8. Hreader pins
+9. BJT (	MMBT3906)
+10. Switch
+11. WCH-LinkE module
+
+## Circuit Connections
+The VSDSquadron Mini RISC-V development boards features a RISC-V SoC with the following capabilities:
+
+- On-board 24MHz RC oscillator
+-  3 groups of GPIO ports, totaling 15 I/O ports
+- USART, I2C, and SPI
+- UART implemented on USART
+- 2KB SRAM for volatile data storage, 16KB CodeFlash for program memory
+- On-board Programmer.
+
+The circuit connections are as follows:
+- **PA2** is connected to one of the push bottons which controls the power on/off the switch.
+- **PA1** is connected to the buzzer.
+- 
