@@ -1,6 +1,7 @@
 # Project : CH32V003 RISC-V Mini Game Console
 ## Overview
 The Handheld Gaming Console project integrates a RISC-V microcontroller to create a portable gaming system featuring a OLED display and tactile buttons. This console allows users to play classic games like Snake and Pong, with the RISC-V microcontroller managing game logic, user input, and rendering graphics. Additionally, a sound module provides audio feedback to enhance the gaming experience. This project demonstrates the innovative use of RISC-V technology in creating an immersive and interactive gaming solution.
+![GameConsole_pic1](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/e3e6c984-1eec-407f-b5c5-ea7b3ac366c7)
 
 ## Components Required
 1. VSDSquadron Mini
@@ -26,6 +27,9 @@ The VSDSquadron Mini RISC-V development boards features a RISC-V SoC with the fo
 - On-board Programmer.
 
 The circuit connections are as follows:
-- **PA2** is connected to one of the push bottons which controls the power on/off the switch.
+- **PA2** GPIO Pin is connected to one of the push bottons which controls the turn on/off of a game.
 - **PA1** is connected to the buzzer.
-- 
+- **PC4** is connected to the game controlling push buttons
+- **PC2** and **PC1** act as SCL(Serial Clock Line) and SDL(Seriel Data Line), these lines are used for I2C communication with OLED Display
+- And there are some VCC and GND connections.
+- Power switch connected to VCC and GND accordingly.
