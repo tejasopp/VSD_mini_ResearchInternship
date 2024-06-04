@@ -14,7 +14,7 @@ The Handheld Gaming Console project integrates a RISC-V microcontroller to creat
 8. Hreader pins
 9. BJT (	MMBT3906)
 10. Switch
-11. WCH-LinkE module
+
 
 ## Circuit Connections
 The VSDSquadron Mini RISC-V development boards features a RISC-V SoC with the following capabilities:
