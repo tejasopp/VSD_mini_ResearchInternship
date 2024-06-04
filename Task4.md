@@ -33,3 +33,10 @@ The circuit connections are as follows:
 - **PC2** and **PC1** act as SCL(Serial Clock Line) and SDL(Seriel Data Line), these lines are used for I2C communication with OLED Display
 - And there are some VCC and GND connections.
 - Power switch connected to VCC and GND accordingly.
+
+  ![GameConsole_wiring](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/1635d8a1-8faa-4052-a98d-c688ece05d02)
+
+  ### Table for Pin connections
+
+![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/93ad1ecf-48d7-44a6-ac2c-c30f88f1a42a)
+
