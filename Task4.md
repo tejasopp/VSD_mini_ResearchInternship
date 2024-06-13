@@ -40,3 +40,11 @@ The circuit connections are as follows:
 
 ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/93ad1ecf-48d7-44a6-ac2c-c30f88f1a42a)
 
+## My Circuit:
+![SmartSelect_20240613_152042_Canva](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/48902767-7bb7-49df-b2b9-6487daf49a00)
+
+## Software
+My code:
+
+
+
