@@ -41,7 +41,7 @@ The circuit connections are as follows:
 ![image](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/93ad1ecf-48d7-44a6-ac2c-c30f88f1a42a)
 
 ## My Circuit:
-![SmartSelect_20240613_152042_Canva](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/48902767-7bb7-49df-b2b9-6487daf49a00)
+![Presentation1](https://github.com/tejasopp/VSD_mini_ResearchInternship/assets/117591903/53dfd121-7434-4be0-9634-25a63d34455c)
 
 ## Software
 I made one of my most played games of my childhood which is **PACMAN**.
